@@ -1,73 +1,113 @@
-# Welcome to your Lovable project
+# 🏋️‍♂️ FitLife — Health & Fitness Tracker
 
-## Project info
+FitLife é uma aplicação web moderna voltada para **acompanhamento de saúde, treinos e bem-estar**, com foco em organização, consistência e visualização clara do progresso do usuário.
 
-**URL**: https://lovable.dev/projects/18b9d46a-b030-4516-b3fa-9d937fe33d53
+O projeto foi desenvolvido como um **projeto pessoal**, com o objetivo de aplicar boas práticas de frontend, experiência do usuário e organização de código em uma aplicação real.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## ✨ Funcionalidades
 
-**Use Lovable**
+- 🏃 Registro e acompanhamento de treinos
+- 📅 Organização de rotinas e atividades
+- 📊 Visualização de progresso e métricas
+- ⏱️ Controle de sessões em tempo real
+- 🎨 Interface moderna, limpa e responsiva
+- ⚡ Performance otimizada com build moderno
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/18b9d46a-b030-4516-b3fa-9d937fe33d53) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🧠 Tecnologias Utilizadas
 
-**Use your preferred IDE**
+- **Vite** — Bundler rápido e eficiente
+- **React** — Construção da interface
+- **TypeScript** — Tipagem estática e segurança
+- **Tailwind CSS** — Estilização utilitária
+- **shadcn/ui** — Componentes reutilizáveis e acessíveis
+- **Node.js** — Ambiente de desenvolvimento
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 📁 Estrutura do Projeto (resumida)
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+src/
+ ├─ components/     # Componentes reutilizáveis
+ ├─ pages/          # Páginas da aplicação
+ ├─ hooks/          # Hooks customizados
+ ├─ utils/          # Funções utilitárias
+ ├─ styles/         # Estilos globais
+ └─ main.tsx        # Ponto de entrada da aplicação
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🚀 Como rodar o projeto localmente
 
-**Use GitHub Codespaces**
+Pré-requisitos
+Node.js (versão LTS recomendada)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+npm ou pnpm
 
-## What technologies are used for this project?
+Passo a passo
 
-This project is built with:
+```
+# Clone o repositório
+git clone https://github.com/SEU_USUARIO/fitlife.git
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+# Acesse a pasta do projeto
+cd fitlife
 
-## How can I deploy this project?
+# Instale as dependências
+npm install
 
-Simply open [Lovable](https://lovable.dev/projects/18b9d46a-b030-4516-b3fa-9d937fe33d53) and click on Share -> Publish.
+# Inicie o servidor de desenvolvimento
+npm run dev
+A aplicação estará disponível em:
+http://localhost:8080
+```
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## 🏗️ Build para Produção
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+npm run build
+Para visualizar o build localmente:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+npm run preview
+
+---
+
+## 🌐 Deploy
+
+O projeto pode ser facilmente publicado em plataformas como:
+
+Vercel
+
+Netlify
+
+Cloudflare Pages
+
+Compatível com qualquer serviço que suporte aplicações Vite + React.
+
+---
+
+## 📌 Status do Projeto
+
+🟢 Em desenvolvimento
+
+📈 Evoluindo com foco em UX, performance e novas funcionalidades
+
+---
+
+## 👤 Autor
+
+Desenvolvido por Eduardo Bezerra
+🔗 GitHub: https://github.com/EduardoBOliveira
+
+---
+
+## 📄 Licença
+
+Projeto de uso pessoal e educacional.
+Sinta-se à vontade para estudar, adaptar e evoluir.
