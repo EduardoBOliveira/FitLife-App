@@ -1,0 +1,248 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FitLife Design System - Health & Fitness Platform
+Colors, gradients, animations optimized for motivation and clarity.
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Background & Surface Colors */
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
+    --surface: 210 15% 96%;
+    
+    /* Card System */
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+    --card-elevated: 210 40% 98%;
+    
+    /* Interactive Elements */
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+    
+    /* Brand Colors - Blue & Green Theme */
+    --primary: 217 91% 60%; /* Vibrant Blue #3B82F6 */
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 217 91% 70%;
+    --primary-glow: 217 91% 85%;
+    
+    --secondary: 158 64% 52%; /* Healthy Green #10B981 */
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 158 64% 62%;
+    --secondary-glow: 158 64% 85%;
+    
+    /* Neutral System */
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 215 25% 15%;
+    
+    /* Status Colors */
+    --success: 158 64% 52%;
+    --success-foreground: 0 0% 100%;
+    --warning: 43 96% 56%;
+    --warning-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Interface Elements */
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 217 91% 60%;
+    --radius: 0.75rem;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--card-elevated)) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--surface)) 100%);
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(var(--primary) / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(var(--primary) / 0.1), 0 2px 4px -1px hsl(var(--primary) / 0.06);
+    --shadow-lg: 0 10px 15px -3px hsl(var(--primary) / 0.1), 0 4px 6px -2px hsl(var(--primary) / 0.05);
+    --shadow-xl: 0 20px 25px -5px hsl(var(--primary) / 0.1), 0 10px 10px -5px hsl(var(--primary) / 0.04);
+    --shadow-glow: 0 0 20px hsl(var(--primary) / 0.15);
+    --shadow-success: 0 0 20px hsl(var(--success) / 0.15);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark Mode - Maintaining brand identity */
+    --background: 215 28% 7%;
+    --foreground: 210 20% 95%;
+    --surface: 215 25% 9%;
+    
+    --card: 215 28% 10%;
+    --card-foreground: 210 20% 95%;
+    --card-elevated: 215 25% 12%;
+    
+    --popover: 215 28% 10%;
+    --popover-foreground: 210 20% 95%;
+    
+    /* Brand colors remain vibrant in dark mode */
+    --primary: 217 91% 65%;
+    --primary-foreground: 215 28% 7%;
+    --primary-light: 217 91% 75%;
+    --primary-glow: 217 91% 85%;
+    
+    --secondary: 158 64% 55%;
+    --secondary-foreground: 215 28% 7%;
+    --secondary-light: 158 64% 65%;
+    --secondary-glow: 158 64% 85%;
+    
+    --muted: 215 25% 15%;
+    --muted-foreground: 215 15% 65%;
+    --accent: 215 25% 15%;
+    --accent-foreground: 210 20% 95%;
+    
+    --success: 158 64% 55%;
+    --success-foreground: 215 28% 7%;
+    --warning: 43 96% 56%;
+    --warning-foreground: 215 28% 7%;
+    --destructive: 0 84% 65%;
+    --destructive-foreground: 215 28% 7%;
+    
+    --border: 215 25% 20%;
+    --input: 215 25% 20%;
+    --ring: 217 91% 65%;
+    
+    /* Dark mode gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--card-elevated)) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--surface)) 100%);
+    
+    /* Enhanced shadows for dark mode */
+    --shadow-glow: 0 0 25px hsl(var(--primary) / 0.2);
+    --shadow-success: 0 0 25px hsl(var(--success) / 0.2);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Focus styles */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+}
+
+@layer components {
+  /* Card System */
+  .card-elevated {
+    @apply bg-card-elevated shadow-md;
+  }
+
+  .card-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .card-success {
+    box-shadow: var(--shadow-success);
+  }
+
+  /* Gradient Backgrounds */
+  .bg-gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .bg-gradient-card {
+    background: var(--gradient-card);
+  }
+
+  .bg-gradient-subtle {
+    background: var(--gradient-subtle);
+  }
+
+  /* Interactive Elements */
+  .interactive {
+    @apply transition-all duration-200 ease-in-out hover:scale-[1.02] hover:shadow-lg;
+  }
+
+  .interactive-scale {
+    @apply transition-transform duration-200 ease-in-out hover:scale-105;
+  }
+
+  /* Text Animations */
+  .text-glow {
+    text-shadow: 0 0 10px hsl(var(--primary) / 0.3);
+  }
+
+  /* Fitness-specific animations */
+  .progress-glow {
+    animation: progress-pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes progress-pulse {
+    0%, 100% {
+      box-shadow: 0 0 5px hsl(var(--success) / 0.3);
+    }
+    50% {
+      box-shadow: 0 0 20px hsl(var(--success) / 0.6);
+    }
+  }
+
+  /* Achievement animation */
+  .achievement-bounce {
+    animation: achievement 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  @keyframes achievement {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
