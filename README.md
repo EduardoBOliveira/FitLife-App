@@ -47,7 +47,7 @@ src/
 Pré-requisitos
 Node.js (versão LTS recomendada)
 
-npm ou pnpm
+- npm ou pnpm
 
 Passo a passo
 
@@ -71,10 +71,11 @@ http://localhost:8080
 
 ## 🏗️ Build para Produção
 
-npm run build
+- npm run build
+
 Para visualizar o build localmente:
 
-npm run preview
+- npm run preview
 
 ---
 
@@ -82,11 +83,9 @@ npm run preview
 
 O projeto pode ser facilmente publicado em plataformas como:
 
-Vercel
-
-Netlify
-
-Cloudflare Pages
+- Vercel
+- Netlify
+- Cloudflare Pages
 
 Compatível com qualquer serviço que suporte aplicações Vite + React.
 
@@ -103,6 +102,7 @@ Compatível com qualquer serviço que suporte aplicações Vite + React.
 ## 👤 Autor
 
 Desenvolvido por Eduardo Bezerra
+
 🔗 GitHub: https://github.com/EduardoBOliveira
 
 ---
